@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS.css">
+    <title>寶可夢方塊</title>
+</head>
+<body>
+    <div class="loading_page"><div class="strat_btn">start</div></div>
+    <div class="infor">
+        <h1>Pokemon<br>Blocks</h1>
+        <p class="status">_</p>
+    </div>
+    <div class="blocks">
+        <div class="block block1" onclick="game.UserSendInput('1')"><div class="skin"></div></div>
+        <div class="block block2" onclick="game.UserSendInput('2')"><div class="skin"></div></div>
+        <div class="block block3" onclick="game.UserSendInput('3')"><div class="skin"></div></div>
+        <div class="block block4" onclick="game.UserSendInput('4')"><div class="skin"></div></div>
+    </div>
+    <div class="inputStatus"></div>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./function.js"></script>
+</body>
+</html>

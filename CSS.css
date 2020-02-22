@@ -1,0 +1,310 @@
+.blocks > .block {
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+}
+
+body, html {
+  background-color: #000;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 5px solid rgba(255, 255, 255, 0.05);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body:active, html:active {
+  -webkit-transition: 0s;
+  transition: 0s;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.infor {
+  color: #fff;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  font-size: 30px;
+}
+
+.infor > p {
+  font-size: 16px;
+}
+
+.blocks {
+  width: 500px;
+  height: 500px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blocks > .block {
+  background-color: #fff;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.blocks > .block:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  -webkit-transform: rotate(-45deg) translate(0%, 100%);
+          transform: rotate(-45deg) translate(0%, 100%);
+  width: 80px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.blocks > .block:after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  -webkit-transform: rotate(45deg) translate(0%, 100%);
+          transform: rotate(45deg) translate(0%, 100%);
+  width: 80px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.blocks > .block > .skin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.blocks > .block > .skin:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 100px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.blocks > .block > .skin:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  width: 100px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.blocks > .block.block1 {
+  opacity: 0.3;
+  background-color: rgba(255, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 30px rgba(255, 0, 0, 0.9);
+          box-shadow: 0px 0px 30px rgba(255, 0, 0, 0.9);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.blocks > .block.block1:hover {
+  -webkit-transition: 0s;
+  transition: 0s;
+  opacity: 0.8;
+  background-color: rgba(255, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 30px rgba(255, 0, 0, 0.9);
+          box-shadow: 0px 0px 30px rgba(255, 0, 0, 0.9);
+}
+
+.blocks > .block.block1:active, .blocks > .block.block1.active {
+  -webkit-transition: 0s;
+  transition: 0s;
+  opacity: 0.6;
+  background-image: url("https://media.52poke.com/wiki/7/73/004Charmander.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.blocks > .block.block2 {
+  opacity: 0.3;
+  background-color: rgba(255, 211, 6, 0.3);
+  -webkit-box-shadow: 0px 0px 30px rgba(255, 211, 6, 0.9);
+          box-shadow: 0px 0px 30px rgba(255, 211, 6, 0.9);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.blocks > .block.block2:hover {
+  -webkit-transition: 0s;
+  transition: 0s;
+  opacity: 0.8;
+  background-color: rgba(255, 211, 6, 0.6);
+  -webkit-box-shadow: 0px 0px 30px rgba(255, 211, 6, 0.9);
+          box-shadow: 0px 0px 30px rgba(255, 211, 6, 0.9);
+}
+
+.blocks > .block.block2:active, .blocks > .block.block2.active {
+  -webkit-transition: 0s;
+  transition: 0s;
+  opacity: 0.6;
+  background-image: url("https://s1.52poke.wiki/wiki/thumb/0/0d/025Pikachu.png/260px-025Pikachu.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.blocks > .block.block3 {
+  opacity: 0.3;
+  background-color: rgba(0, 0, 227, 0.3);
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 227, 0.9);
+          box-shadow: 0px 0px 30px rgba(0, 0, 227, 0.9);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.blocks > .block.block3:hover {
+  -webkit-transition: 0s;
+  transition: 0s;
+  opacity: 0.8;
+  background-color: rgba(0, 0, 227, 0.6);
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 227, 0.9);
+          box-shadow: 0px 0px 30px rgba(0, 0, 227, 0.9);
+}
+
+.blocks > .block.block3:active, .blocks > .block.block3.active {
+  -webkit-transition: 0s;
+  transition: 0s;
+  opacity: 0.6;
+  background-image: url("https://media.52poke.com/wiki/thumb/3/39/007Squirtle.png/600px-007Squirtle.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.blocks > .block.block4 {
+  opacity: 0.3;
+  background-color: rgba(0, 166, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 166, 0, 0.9);
+          box-shadow: 0px 0px 30px rgba(0, 166, 0, 0.9);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.blocks > .block.block4:hover {
+  -webkit-transition: 0s;
+  transition: 0s;
+  opacity: 0.8;
+  background-color: rgba(0, 166, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 166, 0, 0.9);
+          box-shadow: 0px 0px 30px rgba(0, 166, 0, 0.9);
+}
+
+.blocks > .block.block4:active, .blocks > .block.block4.active {
+  -webkit-transition: 0s;
+  transition: 0s;
+  opacity: 0.6;
+  background-image: url("https://s1.52poke.wiki/wiki/thumb/2/21/001Bulbasaur.png/300px-001Bulbasaur.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.inputStatus {
+  margin: 10px;
+}
+
+.inputStatus .circle {
+  margin: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  background-image: url(https://s1.52poke.wiki/wiki/5/5e/Bag_%E7%B2%BE%E7%81%B5%E7%90%83_Sprite.png);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.3;
+}
+
+.inputStatus .circle.correct {
+  opacity: 1;
+}
+
+.inputStatus.correct .circle {
+  background-image: url(https://s1.52poke.wiki/wiki/a/a7/Bag_%E8%B6%85%E7%BA%A7%E7%90%83_Sprite.png);
+}
+
+.inputStatus.worng .circle {
+  background-image: url(https://s1.52poke.wiki/wiki/2/28/Bag_%E8%B4%B5%E9%87%8D%E7%90%83_Sprite.png);
+}
+
+.loading_page {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #4F4F4F;
+  background-image: url("https://s1.52poke.wiki/wiki/thumb/6/60/%E6%9C%80%E5%88%9D%E7%9A%84%E4%BC%99%E4%BC%B4.png/200px-%E6%9C%80%E5%88%9D%E7%9A%84%E4%BC%99%E4%BC%B4.png");
+  background-position: center;
+  background-size: 500px;
+  background-repeat: no-repeat;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loading_page .strat_btn {
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: linear-gradient(-45deg, #FF9797, #B9B9FF);
+  border: 1px solid red;
+}
+
+.loading_page .strat_btn:hover {
+  background: linear-gradient(45deg, #FF9797, #B9B9FF);
+  border: 1px dashed red;
+}
+/*# sourceMappingURL=CSS.css.map */
